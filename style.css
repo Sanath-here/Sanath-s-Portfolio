@@ -1,8 +1,29 @@
 /* Style for the opening.html */
 
+
+body{
+    background-image: url(Herobrine.jpeg);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
 .Opening{
     position: absolute;
-    top: 330px;
+    color: antiquewhite;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    top: 450px;
     left: 450px;
 }
 
+button{
+    position: relative;
+    left: 200px;
+    padding: 15px;
+    border-radius: 7px;
+}
+
+button:hover{
+    background-color: black;
+    color: antiquewhite;
+}
