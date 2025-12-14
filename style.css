@@ -7,8 +7,12 @@
     background-color: black;
 }
 
+.headerbox img{
+    filter: blur(4px);
+    filter: brightness(50%);
+}
+
 .headerbox{
-    background-image: url(Images/_\ \(1\).jpeg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: bottom;
@@ -16,7 +20,7 @@
 }
 
 .menus{
-    position: relative;
+    position: absolute;
     display: flex;
     font-size: medium;
     gap: 50px;
@@ -26,9 +30,9 @@
 }
 
 #words{
-    position: relative;
-    top: 120px;
-    text-align: center;
+    position: absolute;
+    top: 160px;
+    left: 40%;
     font-size: large;
     color: white;
     
@@ -40,17 +44,19 @@
 
 #w2{
     position: relative;
+    left: 20%;
 }
 
 #w3{
     position: relative;
+    right: 20%;
 }
 
 .content{
+    position: relative;
     background-color: rgb(0, 0, 0);
-    box-shadow: white;
     height: 1000px;
-    border-radius: 30px;
+    border-radius: 50px;
 }
 
 
