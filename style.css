@@ -9,12 +9,20 @@
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: bottom;
+    height: 400px;
 }
 
+.menus{
+    position: relative;
+    margin: 0%;
+    top: 20px;
+    left: 600px;
+}
 #words{
     position: relative;
-    padding: 150px;
-    left: 390px;
+    margin: 0%;
+    top: 150px;
+    left: 530px;
     font-size: x-large;
     color: white;
 }
@@ -58,7 +66,6 @@
     top: 450px;
     left: 450px;
 }
-
 
 #Btn {
     top: 10px;
