@@ -1,11 +1,14 @@
 /* Style for the index.html */
 
+*{
+    margin: 0;
+}
 .indexbody{
     background-color: black;
 }
 
 .headerbox{
-    background-image: url(_\ \(1\).jpeg);
+    background-image: url(Images/_\ \(1\).jpeg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: bottom;
@@ -14,46 +17,47 @@
 
 .menus{
     position: relative;
-    margin: 0%;
-    top: 20px;
-    left: 600px;
+    display: flex;
+    font-size: medium;
+    gap: 50px;
+    left: 20px;
+    top: 30px;
+    color: white;
 }
+
 #words{
     position: relative;
-    margin: 0%;
-    top: 150px;
-    left: 530px;
-    font-size: x-large;
+    top: 120px;
+    text-align: center;
+    font-size: large;
     color: white;
+    
 }
 
 #w1{
     position: relative;
-    margin: 0%;
 }
 
 #w2{
     position: relative;
-    margin: 0%;
-    left: 100px;
 }
 
 #w3{
     position: relative;
-    margin: 0%;
-    right: 100px;
 }
 
 .content{
     background-color: rgb(0, 0, 0);
     box-shadow: white;
     height: 1000px;
+    border-radius: 30px;
 }
 
-    /* Style for the opening.html */
+
+/* Style for the opening.html */
 
 .OpeningBody{
-    background-image: url(Herobrine.jpeg);
+    background-image: url(Images/Herobrine.jpeg);
     background-color: black;
     background-repeat: no-repeat;
     background-size: 100%;
