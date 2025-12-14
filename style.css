@@ -5,20 +5,41 @@
 }
 
 .headerbox{
+    background-image: url(_\ \(1\).jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+}
+
+#words{
     position: relative;
-    background-image: url();
     padding: 150px;
-    left: 400px;
+    left: 390px;
     font-size: x-large;
     color: white;
 }
 
+#w1{
+    position: relative;
+}
+
+#w2{
+    position: relative;
+    padding: 0px;
+    left: 100px;
+}
+
+#w3{
+    position: relative;
+    right: 50px;
+}
+
 .content{
     background-color: black;
+    box-shadow: white;
 }
 
 /* Style for the opening.html */
-
 
 .OpeningBody{
     background-image: url(Herobrine.jpeg);
