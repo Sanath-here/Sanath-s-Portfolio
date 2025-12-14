@@ -1,10 +1,20 @@
 /* Style for the index.html */
 
+.indexbody{
+    background-color: black;
+}
+
 .headerbox{
     position: relative;
-    padding: 30px;
-    left: 480px;
+    background-image: url();
+    padding: 150px;
+    left: 400px;
     font-size: x-large;
+    color: white;
+}
+
+.content{
+    background-color: black;
 }
 
 /* Style for the opening.html */
