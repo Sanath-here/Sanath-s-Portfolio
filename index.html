@@ -28,14 +28,61 @@
     </div>
 
     <div class="content box" id="box1">
-        <h1 style="color: white; position: absolute; top: 650px; left: 310px; font-size: 50px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Hover</h1>
-        <div class="img-wrap">
-            <img id="myimg" src="Images/Herobrine.jpeg" alt="">
+
+        <div class="desc">
+            
+            <h1 style="color: white; position: absolute; top: 10%; left: 33%; font-size: 20px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Hi, I’m Sanath Lal Shibu Lekha 👋</h1>
+
+            <div class="img-wrap">
+                <img id="myimg" src="Images/Herobrine.jpeg" alt="">
+            </div>
+            
+            <div class="text-wrap">
+                <p id="pro-desc">A passionate developer and full-time tech enthusiast who enjoys turning ideas into working code (after a few bugs, coffee breaks ☕, and “why isn’t this working?” moments).
+
+This portfolio is my digital playground where I showcase the projects I’ve built, the skills I’ve learned, and the experiences I’ve collected along the way — from experimenting with new technologies to solving real-world problems.
+
+Feel free to explore, click around, and judge my code responsibly 😄. If something catches your eye or you just want to talk tech, don’t hesitate to connect with me!</p>
+            </div>
+
         </div>
     </div>
+    
+        <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const el = document.getElementById('pro-desc');
+            if (!el) return;
 
-    <div class="content box" id="box2">
-        <p>Hello</p>
-    </div>
+            // capture original text and clear element
+            const fullText = el.innerText.trim();
+            el.textContent = '';
+            el.classList.add('typing');
+
+            let i = 0;
+            function typeStep() {
+                if (i >= fullText.length) {
+                    el.classList.remove('typing');
+                    return;
+                }
+                const ch = fullText.charAt(i);
+                el.textContent += ch;
+                i++;
+
+                // base delay
+                let delay = 18;
+                // small pause after spaces to feel natural
+                if (ch === ' ') delay = 12;
+                // longer pauses after punctuation
+                if (ch === ',' ) delay = 160;
+                if (ch === '.' || ch === '!' || ch === '?') delay = 420;
+                if (ch === '\n') delay = 180; // if any newline chars exist
+
+                setTimeout(typeStep, delay);
+            }
+
+            // slight delay before starting
+            setTimeout(typeStep, 600);
+        });
+        </script>
 </body>
 </html>
